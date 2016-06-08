@@ -1,0 +1,33 @@
+{
+    "name": "vain/data",
+    "type": "shared-package",
+    "authors": [
+        {
+            "name": "Taras Girnyk",
+            "email": "taras.p.gyrnik@gmail.com",
+            "homepage": "http://gitlab.cosmonova.net.ua/mmjitsu/vain-data",
+
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vain\\Data\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "vain/core" : "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/allflame/vain-core.git"
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
