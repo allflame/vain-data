@@ -1,0 +1,4 @@
+services:
+  data.module.repositoty:
+    class: Vain\Data\Module\Repository\ModuleRepository
+    arguments: ['@data.module.factory']
