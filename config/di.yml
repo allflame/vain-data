@@ -1,4 +1,4 @@
 services:
     data.module.repository:
-        class: Vain\Phalcon\Bootstrapper\Factory\MvcBootstrapperFactory
+        class: Vain\Data\Module\Repository\ModuleRepository
         arguments: ['@data.module.factory']
