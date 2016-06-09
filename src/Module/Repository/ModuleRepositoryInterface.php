@@ -19,10 +19,4 @@ interface ModuleRepositoryInterface
      */
     public function getModule($moduleName);
 
-    /**
-     * @param string $moduleName
-     *
-     * @return bool
-     */
-    public function isModuleAvailable($moduleName);
 }

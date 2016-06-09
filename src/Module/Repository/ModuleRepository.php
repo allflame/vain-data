@@ -28,14 +28,6 @@ class ModuleRepository implements ModuleRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function isModuleAvailable($moduleName)
-    {
-        return array_key_exists($moduleName, $this->modules);
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function getModule($moduleName)
     {
         if (false === array_key_exists($moduleName, $this->modules)) {
