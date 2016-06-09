@@ -14,15 +14,17 @@ class ModuleRepository implements ModuleRepositoryInterface
 {
     private $moduleFactory;
 
-    private $modules = [];
+    private $modules;
     
     /**
      * VainDataProviderModuleManager constructor.
      * @param ModuleFactoryInterface $moduleFactory
+     * @param array $modules
      */
-    public function __construct(ModuleFactoryInterface $moduleFactory)
+    public function __construct(ModuleFactoryInterface $moduleFactory, array $modules = [])
     {
         $this->moduleFactory = $moduleFactory;
+        $this->modules = $modules;
     }
 
     /**
