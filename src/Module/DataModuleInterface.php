@@ -1,16 +1,22 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: allflame
- * Date: 4/1/16
- * Time: 12:58 PM
+ * Vain Framework
+ *
+ * PHP Version 7
+ *
+ * @package   vain-expression
+ * @license   https://opensource.org/licenses/MIT MIT License
+ * @link      https://github.com/allflame/vain-expression
  */
-
 namespace Vain\Data\Module;
 
+/**
+ * Interface DataModuleInterface
+ *
+ * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
+ */
 interface DataModuleInterface
 {
-
     /**
      * @return string
      */
@@ -18,7 +24,7 @@ interface DataModuleInterface
 
     /**
      * @param \ArrayAccess $runtimeData
-     * 
+     *
      * @return mixed
      */
     public function getData(\ArrayAccess $runtimeData = null);

@@ -1,25 +1,33 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: allflame
- * Date: 4/4/16
- * Time: 9:53 AM
+ * Vain Framework
+ *
+ * PHP Version 7
+ *
+ * @package   vain-expression
+ * @license   https://opensource.org/licenses/MIT MIT License
+ * @link      https://github.com/allflame/vain-expression
  */
-
 namespace Vain\Data\Module\Repository;
 
 use Vain\Data\Module\Factory\ModuleFactoryInterface;
 
+/**
+ * Class ModuleRepository
+ *
+ * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
+ */
 class ModuleRepository implements ModuleRepositoryInterface
 {
     private $moduleFactory;
 
     private $modules;
-    
+
     /**
      * VainDataProviderModuleManager constructor.
+     *
      * @param ModuleFactoryInterface $moduleFactory
-     * @param array $modules
+     * @param array                  $modules
      */
     public function __construct(ModuleFactoryInterface $moduleFactory, array $modules = [])
     {

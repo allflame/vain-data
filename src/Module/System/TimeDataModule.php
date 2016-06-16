@@ -1,18 +1,24 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: allflame
- * Date: 4/5/16
- * Time: 12:46 PM
+ * Vain Framework
+ *
+ * PHP Version 7
+ *
+ * @package   vain-expression
+ * @license   https://opensource.org/licenses/MIT MIT License
+ * @link      https://github.com/allflame/vain-expression
  */
-
 namespace Vain\Data\Module\System;
 
 use Vain\Data\Module\AbstractDataModule;
 
+/**
+ * Class TimeDataModule
+ *
+ * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
+ */
 class TimeDataModule extends AbstractDataModule
 {
-
     /**
      * DateTimeDataModule constructor.
      */

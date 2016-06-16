@@ -1,19 +1,27 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: allflame
- * Date: 4/5/16
- * Time: 11:32 AM
+ * Vain Framework
+ *
+ * PHP Version 7
+ *
+ * @package   vain-expression
+ * @license   https://opensource.org/licenses/MIT MIT License
+ * @link      https://github.com/allflame/vain-expression
  */
-
 namespace Vain\Data\Module;
 
+/**
+ * Class AbstractDataModule
+ *
+ * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
+ */
 abstract class AbstractDataModule implements DataModuleInterface
 {
     private $name;
 
     /**
      * AbstractDataModule constructor.
+     *
      * @param string $name
      */
     public function __construct($name)
