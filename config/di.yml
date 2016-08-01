@@ -1,4 +1,7 @@
+imports:
+  - { resource: 'vendor/vain/core/config/di.yml' }
+
 services:
-    data.module.repository:
-        class: Vain\Data\Module\Repository\ModuleRepository
-        arguments: ['@data.module.factory']
+  data.module.repository:
+    class: Vain\Data\Module\Repository\ModuleRepository
+    arguments: ['@data.module.factory']
