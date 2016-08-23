@@ -1,6 +1,3 @@
-imports:
-  #- { resource: 'vendor/vain/core/config/di.yml' }
-
 services:
   data.module.repository:
     class: Vain\Data\Module\Repository\ModuleRepository
