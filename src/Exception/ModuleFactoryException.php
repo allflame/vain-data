@@ -10,7 +10,7 @@
  */
 namespace Vain\Data\Exception;
 
-use Vain\Core\Exception\CoreException;
+use Vain\Core\Exception\AbstractCoreException;
 use Vain\Data\Module\Factory\ModuleFactoryInterface;
 
 /**
@@ -18,7 +18,7 @@ use Vain\Data\Module\Factory\ModuleFactoryInterface;
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-class ModuleFactoryException extends CoreException
+class ModuleFactoryException extends AbstractCoreException
 {
     private $moduleFactory;
 
