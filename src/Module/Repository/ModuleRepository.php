@@ -8,8 +8,11 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  * @link      https://github.com/allflame/vain-data
  */
+declare(strict_types=1);
+
 namespace Vain\Data\Module\Repository;
 
+use Vain\Data\Module\DataModuleInterface;
 use Vain\Data\Module\Factory\ModuleFactoryInterface;
 
 /**
@@ -38,7 +41,7 @@ class ModuleRepository implements ModuleRepositoryInterface
     /**
      * @inheritDoc
      */
-    public function getModule($moduleName)
+    public function getModule(string $moduleName) : DataModuleInterface
     {
         if (false === array_key_exists($moduleName, $this->modules)) {
             $this->modules[$moduleName] = $this->moduleFactory->createModule($moduleName);
