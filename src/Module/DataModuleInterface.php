@@ -8,20 +8,18 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  * @link      https://github.com/allflame/vain-data
  */
+declare(strict_types=1);
+
 namespace Vain\Data\Module;
+use Vain\Core\String\StringInterface;
 
 /**
  * Interface DataModuleInterface
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-interface DataModuleInterface
+interface DataModuleInterface extends StringInterface
 {
-    /**
-     * @return string
-     */
-    public function __toString();
-
     /**
      * @param \ArrayAccess $runtimeData
      *

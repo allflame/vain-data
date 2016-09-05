@@ -8,6 +8,8 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  * @link      https://github.com/allflame/vain-data
  */
+declare(strict_types=1);
+
 namespace Vain\Data\Module\Repository;
 
 use Vain\Data\Module\DataModuleInterface;
@@ -24,5 +26,5 @@ interface ModuleRepositoryInterface
      *
      * @return DataModuleInterface
      */
-    public function getModule($moduleName);
+    public function getModule(string $moduleName) : DataModuleInterface;
 }
