@@ -8,6 +8,8 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  * @link      https://github.com/allflame/vain-data
  */
+declare(strict_types=1);
+
 namespace Vain\Data\Module\System;
 
 use Vain\Data\Module\AbstractDataModule;

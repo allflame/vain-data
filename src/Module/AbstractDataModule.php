@@ -8,6 +8,8 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  * @link      https://github.com/allflame/vain-data
  */
+declare(strict_types=1);
+
 namespace Vain\Data\Module;
 
 /**
@@ -32,7 +34,7 @@ abstract class AbstractDataModule implements DataModuleInterface
     /**
      * @return string
      */
-    public function getName()
+    public function getName() : string
     {
         return $this->name;
     }
@@ -40,7 +42,7 @@ abstract class AbstractDataModule implements DataModuleInterface
     /**
      * @inheritDoc
      */
-    public function __toString()
+    public function __toString() : string
     {
         return $this->name;
     }
