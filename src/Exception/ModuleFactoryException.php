@@ -8,7 +8,7 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  * @link      https://github.com/allflame/vain-data
  */
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Vain\Data\Exception;
 
@@ -32,8 +32,12 @@ class ModuleFactoryException extends AbstractCoreException
      * @param int                    $code
      * @param \Exception             $previous
      */
-    public function __construct(ModuleFactoryInterface $moduleFactory, string $message, int $code, \Exception $previous = null)
-    {
+    public function __construct(
+        ModuleFactoryInterface $moduleFactory,
+        string $message,
+        int $code,
+        \Exception $previous = null
+    ) {
         $this->moduleFactory = $moduleFactory;
         parent::__construct($message, $code, $previous);
     }
