@@ -35,7 +35,7 @@ class ModuleFactoryException extends AbstractCoreException
     public function __construct(
         ModuleFactoryInterface $moduleFactory,
         string $message,
-        int $code,
+        int $code = 500,
         \Exception $previous = null
     ) {
         $this->moduleFactory = $moduleFactory;

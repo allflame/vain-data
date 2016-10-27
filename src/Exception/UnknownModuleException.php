@@ -29,6 +29,6 @@ class UnknownModuleException extends ModuleFactoryException
      */
     public function __construct(ModuleFactoryInterface $moduleFactory, string $name)
     {
-        parent::__construct($moduleFactory, sprintf('Unknown module %s', $name), 0, null);
+        parent::__construct($moduleFactory, sprintf('Unknown module %s', $name));
     }
 }
